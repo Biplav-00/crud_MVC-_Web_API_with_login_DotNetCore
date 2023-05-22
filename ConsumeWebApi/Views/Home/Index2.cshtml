@@ -1,0 +1,33 @@
+﻿
+@model IEnumerable<PersonEntity>
+
+
+@{
+    ViewData["Title"] = "Fetching Data from WebApi using Entity Model Class";
+
+}
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Id")
+            </th>
+            <th> @Html.DisplayName("Name")</th>
+            <th>@Html.DisplayName("Email")</th>
+            <th>@Html.DisplayName("Address")</th>
+            <th>@Html.DisplayName("Phone")</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var row in Model)
+        {
+            <tr>
+                <td>@row.person_Id</td>
+                <td>@row.person_Name</td>
+                <td>@row.person_Email</td>
+                <td>@row.person_Address</td>
+                <td>@row.person_Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>

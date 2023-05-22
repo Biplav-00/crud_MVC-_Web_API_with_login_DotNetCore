@@ -1,0 +1,45 @@
+# Ignore Visual Studio 2022 user-specific files
+.vs/
+/bin/
+/obj/
+
+# Ignore build output
+[Bb]in/
+[Oo]bj/
+
+# Ignore NuGet packages
+*/packages/*
+!**/packages/*.nupkg
+*.nuget.props
+*.nuget.targets
+
+# Ignore MSTest Test Results
+TestResults/
+
+# Ignore Resharper cache files
+*/resharper*/**/SolutionCaches
+
+# Ignore StyleCop cache files
+**/_ReSharper.**
+
+# Ignore misc Visual Studio files
+*.user
+*.suo
+*.sln.docstates
+
+# Ignore web.config file transformations
+**/Web.Debug.config
+**/Web.Release.config
+**/Web.Test.config
+**/Web.Staging.config
+
+# Ignore files built by Visual Studio
+[Dd]ebug/
+[Rr]elease/
+x64/
+build/
+[Dd]ebugPublic/
+[Rr]eleasePublic/
+[Oo]ut/
+[Aa]pp_LocalResources/
+[Aa]pp_GlobalResources/

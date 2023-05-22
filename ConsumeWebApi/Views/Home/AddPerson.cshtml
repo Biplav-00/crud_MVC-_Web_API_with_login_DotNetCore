@@ -1,0 +1,35 @@
+﻿@model ConsumeWebApi.Models.AddPersonEntity
+@{
+    ViewData["Title"] = "Add Person";
+}
+
+<h1>Add Person</h1>
+
+<h4>Person Entity</h4>
+<div class="row">
+    <div class="col-md-4">
+
+        <form asp-action="AddPerson" method="post">
+            <div class="form-group">
+                <label asp-for="person_Name" class="control-label"></label>
+                <input asp-for="person_Name" class="form-control"  required/>
+            </div>
+            <div class="form-group">
+                <label asp-for="person_Email" class="control-label"></label>
+                <input asp-for="person_Email" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="person_Phone" class="control-label"></label>
+                <input asp-for="person_Phone" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label asp-for="person_Address" class="control-label"></label>
+                <input asp-for="person_Address" class="form-control" />
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+
+        </form>
+    </div>
+</div>
